@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1338730051360765');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1338730051360765&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <title>O Método: Sistema de Desbloqueio Metabólico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #010409; 
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .font-heading {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .font-luxury {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Progress Bar */
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(to right, #db2777, #7c3aed);
+            z-index: 100;
+            transition: width 0.1s ease-out;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* iOS 26 Liquid Status Card */
+        .status-card {
+            background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255,255,255,0.1);
+            transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* SCAN LINES EFFECT */
+        .scan-line-horizontal {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            z-index: 5;
+            animation: scan-h 4s linear infinite;
+        }
+        .scan-line-vertical {
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(0deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            z-index: 5;
+            animation: scan-v 6s linear infinite;
+        }
+
+        @keyframes scan-h {
+            0% { top: -10%; }
+            50% { top: 110%; }
+            100% { top: -10%; }
+        }
+        @keyframes scan-v {
+            0% { left: -10%; }
+            50% { left: 110%; }
+            100% { left: -10%; }
+        }
+
+        /* AQUARIUM SYSTEM */
+        .aquarium-overlay {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.6;
+        }
+
+        .fish {
+            position: absolute;
+            width: 14px;
+            height: 6px;
+            background: linear-gradient(90deg, #db2777, #7c3aed);
+            border-radius: 50%;
+            filter: blur(0.5px) drop-shadow(0 0 5px rgba(219, 39, 119, 0.5));
+            opacity: 0.8;
+        }
+
+        .fish::after {
+            content: '';
+            position: absolute;
+            right: -4px;
+            top: 1px;
+            width: 0;
+            height: 0;
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            border-right: 4px solid #7c3aed;
+        }
+
+        /* Organic Swimming Animations */
+        @keyframes swim-path-1 {
+            0% { transform: translate(-20px, 40px) rotate(0deg); }
+            25% { transform: translate(150px, 20px) rotate(-10deg); }
+            50% { transform: translate(300px, 60px) rotate(5deg); }
+            75% { transform: translate(150px, 100px) rotate(15deg); }
+            100% { transform: translate(-20px, 40px) rotate(0deg); }
+        }
+
+        @keyframes swim-path-2 {
+            0% { transform: translate(400px, 150px) rotate(180deg); }
+            33% { transform: translate(200px, 100px) rotate(170deg); }
+            66% { transform: translate(50px, 180px) rotate(190deg); }
+            100% { transform: translate(400px, 150px) rotate(180deg); }
+        }
+
+        @keyframes swim-path-3 {
+            0% { transform: translate(50px, 250px) rotate(0deg); }
+            50% { transform: translate(350px, 200px) rotate(-5deg); }
+            100% { transform: translate(50px, 250px) rotate(0deg); }
+        }
+
+        @keyframes glowing-scales {
+            0%, 100% { filter: brightness(1) drop-shadow(0 0 5px rgba(219, 39, 119, 0.4)); }
+            50% { filter: brightness(1.8) drop-shadow(0 0 12px rgba(255, 255, 255, 0.6)); }
+        }
+
+        .fish-1 { animation: swim-path-1 25s linear infinite, glowing-scales 4s ease-in-out infinite; }
+        .fish-2 { animation: swim-path-2 32s linear infinite, glowing-scales 5s ease-in-out infinite; width: 10px; height: 4px; opacity: 0.5; }
+        .fish-3 { animation: swim-path-3 28s linear infinite, glowing-scales 3s ease-in-out infinite; width: 18px; height: 8px; }
+
+        .status-pill {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.1);
+        }
+
+        .progress-line-bg {
+            height: 2px;
+            background: rgba(255,255,255,0.05);
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+
+        .progress-line-fill {
+            height: 100%;
+            background: linear-gradient(to right, #db2777, #ff7eb3);
+            border-radius: 10px;
+            transform-origin: left;
+            animation: fill-width 2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+        }
+
+        @keyframes fill-width {
+            from { transform: scaleX(0); }
+            to { transform: scaleX(1); }
+        }
+
+        .glass-btn {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            color: white;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .glass-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(219, 39, 119, 0.2);
+        }
+
+        #main-nav-container {
+            transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        
+        #main-nav-container.scrolled {
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.25);
+            transform: scale(0.96);
+        }
+
+        .btn-attention {
+            background: linear-gradient(135deg, #ff4b91 0%, #ff7eb3 50%, #db2777 100%);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 0 25px rgba(255, 75, 145, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-attention:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 0 50px rgba(255, 75, 145, 0.7);
+        }
+
+        @keyframes pulse-feminine {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.02); opacity: 0.9; }
+        }
+
+        .animate-pulse-feminine {
+            animation: pulse-feminine 2.5s ease-in-out infinite;
+        }
+
+        /* 3D TRUST ICONS REALISTIC */
+        .trust-icon-wrapper {
+            perspective: 1000px;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            touch-action: none;
+        }
+
+        .icon-3d-object {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate-float 5s ease-in-out infinite;
+            transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        @keyframes rotate-float {
+            0%, 100% { transform: translateY(0) rotateY(0deg) rotateX(10deg); }
+            50% { transform: translateY(-15px) rotateY(20deg) rotateX(-5deg); }
+        }
+
+        .shield-3d {
+            background: linear-gradient(135deg, #db2777, #7c3aed);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            width: 60px;
+            height: 70px;
+            box-shadow: 0 10px 30px rgba(219, 39, 119, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .lock-body-3d {
+            width: 50px;
+            height: 40px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.5);
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .lock-shackle-3d {
+            width: 30px;
+            height: 35px;
+            border: 6px solid #e2e8f0;
+            border-bottom: none;
+            border-radius: 20px 20px 0 0;
+            position: absolute;
+            top: -22px;
+            left: 10px;
+            z-index: -1;
+            transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transform-origin: left bottom;
+        }
+        
+        /* Estado Aberto do Cadeado */
+        .lock-shackle-3d.is-open {
+            transform: translateY(-8px) rotateZ(-15deg);
+        }
+
+        .card-privacy-3d {
+            width: 70px;
+            height: 45px;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border-radius: 6px;
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.5);
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            border: 1px solid rgba(255,255,255,0.2);
+            overflow: hidden;
+            transform: rotateX(20deg);
+        }
+
+        /* EDITORIAL TEXTURE SYSTEM */
+        .editorial-container {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .editorial-m {
+            position: absolute;
+            font-size: 45vw;
+            font-weight: 800;
+            top: 45%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            font-family: 'Outfit', sans-serif;
+            color: #ffffff;
+            opacity: 0.05;
+            z-index: 1;
+            line-height: 1;
+        }
+
+        .headline-editorial {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            line-height: 0.95;
+            position: relative;
+            z-index: 10;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1.2s cubic-bezier(0.2, 1, 0.3, 1), transform 1.2s cubic-bezier(0.2, 1, 0.3, 1);
+        }
+
+        .active {
+            opacity: 1 !important;
+            transform: translate(0, 0) scale(1) !important;
+        }
+
+        .logo-icon-3d {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            transform-style: preserve-3d;
+            perspective: 400px;
+        }
+
+        .saturn-ring {
+            transform-origin: center;
+            animation: ring-rotate 4s linear infinite;
+        }
+
+        @keyframes ring-rotate {
+            0% { transform: rotateX(75deg) rotateZ(0deg); opacity: 0.8; }
+            50% { transform: rotateX(75deg) rotateZ(180deg); opacity: 1; }
+            100% { transform: rotateX(75deg) rotateZ(360deg); opacity: 0.8; }
+        }
+
+        .rotating-badge-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            perspective: 1000px;
+            z-index: 50;
+        }
+
+        .rotating-badge-3d {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: spin-through 6s linear infinite;
+        }
+
+        .badge-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #db2777;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 8px;
+            line-height: 1.1;
+            font-weight: 900;
+            color: white;
+            text-transform: uppercase;
+            backface-visibility: hidden;
+            box-shadow: 0 0 20px rgba(219, 39, 119, 0.6);
+        }
+
+        .badge-back { transform: rotateY(180deg); background: #7c3aed; }
+
+        @keyframes spin-through {
+            0% { transform: rotateY(0) rotateX(10deg); }
+            100% { transform: rotateY(360deg) rotateX(10deg); }
+        }
+
+        .best-seller-marquee {
+            position: absolute;
+            top: 35px;
+            right: -65px;
+            transform: rotate(45deg);
+            background: #db2777;
+            width: 250px;
+            overflow: hidden;
+            white-space: nowrap;
+            z-index: 40;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 5s linear infinite;
+            padding: 6px 0;
+            font-size: 10px;
+            font-weight: 900;
+            color: white;
+            text-transform: uppercase;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .kirvano-k-3d {
+            width: 80px;
+            height: 80px;
+            background: #000000;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8), inset 0 2px 10px rgba(255,255,255,0.1);
+            transform-style: preserve-3d;
+            position: relative;
+            transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+            cursor: pointer;
+        }
+        .kirvano-k-3d.expanded { width: 260px; }
+        .kirvano-k-3d span {
+            font-family: 'Outfit', sans-serif;
+            font-size: 48px;
+            font-weight: 900;
+            color: #ffffff;
+            transform: translateZ(40px);
+            background: linear-gradient(to bottom, #fff, #bbb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hot-offer {
+            color: #ef4444;
+            text-decoration: line-through;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* INTELLIGENT FLAME ANIMATION */
+        @keyframes hot-flame-motion {
+            0%, 100% { 
+                transform: scale(1) rotate(-3deg) translateY(0); 
+                filter: drop-shadow(0 0 2px #ef4444) brightness(1); 
+            }
+            25% { 
+                transform: scale(1.1) rotate(1deg) translateY(-1px); 
+                filter: drop-shadow(0 0 6px #f87171) brightness(1.2); 
+            }
+            50% { 
+                transform: scale(1.25) rotate(3deg) translateY(0); 
+                filter: drop-shadow(0 0 10px #ef4444) brightness(1.4); 
+            }
+            75% { 
+                transform: scale(1.15) rotate(-1deg) translateY(-2px); 
+                filter: drop-shadow(0 0 5px #f87171) brightness(1.2); 
+            }
+        }
+        .animate-intelligent-flame {
+            animation: hot-flame-motion 1.8s ease-in-out infinite;
+            transform-origin: bottom center;
+            will-change: transform, filter;
+        }
+
+        /* Realistic 3D Verified Icon & Social Proof Animations */
+        @keyframes float-social-proof {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
+
+        @keyframes icon-pulse-3d {
+            0%, 100% { transform: scale(1) rotateZ(0); filter: brightness(1); }
+            50% { transform: scale(1.15) rotateZ(5deg); filter: brightness(1.2) drop-shadow(0 0 8px rgba(16, 185, 129, 0.6)); }
+        }
+
+        .social-proof-pill {
+            animation: float-social-proof 3s ease-in-out infinite;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: help;
+        }
+
+        .social-proof-pill:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05) translateY(-2px);
+        }
+
+        .icon-verified-3d {
+            width: 16px;
+            height: 16px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3), inset 0 1px 1px rgba(255,255,255,0.4);
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 50px;
+            animation: icon-pulse-3d 4s ease-in-out infinite;
+            transition: all 0.3s ease;
+        }
+
+        .social-proof-pill:hover .icon-verified-3d {
+            animation: none;
+            transform: scale(1.4) rotateY(180deg);
+            background: linear-gradient(135deg, #34d399, #10b981);
+        }
+
+        .icon-verified-3d::after {
+            content: '✓';
+            color: white;
+            font-size: 10px;
+            font-weight: 900;
+            transform: translateZ(4px);
+            transition: all 0.3s ease;
+        }
+
+        .social-proof-pill:hover .icon-verified-3d::after {
+            transform: translateZ(6px) rotateY(-180deg);
+        }
+
+        /* UNIQUE 3D PAIN POINT ICONS */
+        .pain-point-icon-3d {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 500px;
+            margin-bottom: 24px;
+            transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        /* Hover Effect for the entire Card */
+        .group:hover .pain-point-icon-3d {
+            transform: scale(1.25) translateY(-10px) rotateY(20deg) rotateX(-10deg);
+        }
+
+        /* 1. Inchaço - Cylinder Thermometer */
+        .icon-swelling-3d {
+            width: 20px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        .liquid-neon {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to top, #7c3aed, #db2777);
+            box-shadow: 0 0 15px #db2777;
+            animation: liquid-rise 3s ease-in-out infinite alternate;
+        }
+        @keyframes liquid-rise {
+            0% { height: 30%; filter: hue-rotate(0deg); }
+            100% { height: 80%; filter: hue-rotate(30deg); }
+        }
+        .group:hover .liquid-neon {
+            animation-duration: 0.6s;
+            box-shadow: 0 0 25px #ff4b91;
+        }
+
+        /* 2. Clothes - Scissor Pivot */
+        .icon-clothes-3d {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .scissor-part {
+            width: 40px;
+            height: 4px;
+            background: linear-gradient(90deg, #94a3b8, #f8fafc);
+            border-radius: 2px;
+            position: absolute;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+        .scissor-1 { transform: rotate(45deg); animation: scissor-snap-1 2s ease-in-out infinite; }
+        .scissor-2 { transform: rotate(-45deg); animation: scissor-snap-2 2s ease-in-out infinite; }
+        @keyframes scissor-snap-1 { 0%, 100% { transform: rotate(45deg); } 50% { transform: rotate(10deg); } }
+        @keyframes scissor-snap-2 { 0%, 100% { transform: rotate(-45deg); } 50% { transform: rotate(-10deg); } }
+        
+        .group:hover .scissor-1 { animation-duration: 0.5s; }
+        .group:hover .scissor-2 { animation-duration: 0.5s; }
+
+        /* 3. Back Pain - Pulsing Shield */
+        .icon-back-3d {
+            width: 45px;
+            height: 45px;
+            background: #db2777;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 30px rgba(219, 39, 119, 0.4);
+            animation: shield-vibrate 0.2s linear infinite;
+        }
+        .icon-back-3d span { font-size: 24px; font-weight: 900; color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        @keyframes shield-vibrate { 0%, 100% { transform: translate(0,0) scale(1); } 25% { transform: translate(-1px, 1px) scale(1.02); } 75% { transform: translate(1px, -1px) scale(0.98); } }
+        
+        .group:hover .icon-back-3d {
+            animation-duration: 0.05s;
+            box-shadow: 0 0 35px rgba(239, 68, 68, 0.8);
+            background: #ef4444;
+        }
+
+        /* 4. No Photos - Glass Glitch Camera */
+        .icon-camera-3d {
+            width: 50px;
+            height: 35px;
+            background: #1e293b;
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            animation: camera-glitch 5s step-end infinite;
+        }
+        .lens-glass {
+            width: 22px;
+            height: 22px;
+            background: radial-gradient(circle at 30% 30%, #475569, #0f172a);
+            border-radius: 50%;
+            border: 2px solid #334155;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease;
+        }
+        @keyframes camera-glitch { 0%, 95%, 100% { transform: translate(0,0) skew(0); filter: grayscale(0); } 96% { transform: translate(3px, -2px) skew(5deg); filter: grayscale(1) invert(1); } 98% { transform: translate(-3px, 2px) skew(-5deg); } }
+        
+        .group:hover .lens-glass {
+            transform: translate(-50%, -50%) scale(1.4);
+            border-color: #db2777;
+            box-shadow: 0 0 20px rgba(219, 39, 119, 0.5);
+        }
+        .group:hover .icon-camera-3d {
+            animation: camera-glitch 0.4s step-end infinite;
+        }
+
+        /* 5. Loop - Rotating Orbit */
+        .icon-loop-3d {
+            width: 50px;
+            height: 50px;
+            border: 2px dashed rgba(124, 58, 237, 0.4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: spin-orbit 8s linear infinite;
+        }
+        .orbit-ball {
+            width: 12px;
+            height: 12px;
+            background: #7c3aed;
+            border-radius: 50%;
+            position: absolute;
+            top: -6px;
+            box-shadow: 0 0 15px #7c3aed;
+        }
+        .core-user {
+            width: 24px;
+            height: 24px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+        }
+        @keyframes spin-orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        
+        .group:hover .icon-loop-3d {
+            animation-duration: 1.5s;
+            border-color: #db2777;
+        }
+        .group:hover .orbit-ball {
+            background: #db2777;
+            box-shadow: 0 0 20px #db2777;
+        }
+        .group:hover .core-user {
+            transform: scale(1.3);
+            background: rgba(219, 39, 119, 0.2);
+        }
+
+        /* WHATSAPP & PRIVACY STYLES */
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .btn-whatsapp:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(37, 211, 102, 0.4);
+        }
+        .wp-icon-3d {
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+            animation: wp-float 3s ease-in-out infinite;
+        }
+        @keyframes wp-float {
+            0%, 100% { transform: translateY(0) rotate(0); }
+            50% { transform: translateY(-3px) rotate(5deg); }
+        }
+    </style>
+</head>
+<body class="selection:bg-pink-500/30">
+
+    <div id="scroll-progress"></div>
+
+    <nav class="fixed top-0 w-full z-50 py-3 px-4">
+        <div id="main-nav-container" class="max-w-xl mx-auto flex justify-between items-center px-6 py-2 glass rounded-full border-white/10 shadow-2xl">
+            <div id="logo-container" class="flex items-center cursor-pointer group">
+                <div id="logo-3d-icon" class="logo-icon-3d">
+                    <svg class="saturn-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="14" fill="white" />
+                        <ellipse class="saturn-ring" cx="32" cy="32" rx="28" ry="10" stroke="white" stroke-width="3" stroke-linecap="round" fill="none" />
+                    </svg>
+                </div>
+                <div class="text-xs sm:text-sm font-black tracking-tighter uppercase font-heading">O MÉTODO<span class="text-pink-500">.</span></div>
+            </div>
+            
+            <div class="social-proof-pill flex items-center gap-2 px-3 py-1 bg-white/5 rounded-full border border-white/5 shadow-inner">
+                <div class="icon-verified-3d"></div>
+                <div class="text-[9px] font-bold uppercase tracking-widest text-slate-100 flex gap-1">
+                    <span id="buyers-counter">14.282</span> <span class="text-slate-400">mulheres compraram</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-32 px-4 min-h-screen flex items-center overflow-hidden">
+        <div class="editorial-container"><div class="editorial-m">M</div></div>
+        
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-purple-900/10 blur-[180px] rounded-full -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-[800px] h-[800px] bg-pink-900/5 blur-[180px] rounded-full -z-10"></div>
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
+            <div class="reveal active">
+                <div class="mb-10 flex items-center gap-3">
+                    <span class="w-10 h-[1px] bg-pink-500/40"></span>
+                    <span class="font-luxury text-pink-400 text-lg italic font-medium tracking-wide">Exclusivo para Mulheres</span>
+                </div>
+                <h1 class="text-6xl md:text-[92px] headline-editorial text-white mb-10">O Sistema <br>de <br><span class="text-transparent bg-clip-text bg-gradient-to-br from-white via-white to-slate-500">Desbloqueio</span></h1>
+                <p class="text-xl md:text-2xl text-slate-400 mb-12 leading-relaxed font-light max-w-xl">
+                    <span class="text-slate-100 font-semibold italic">Você já tentou de tudo.</span> Conheça o que realmente funciona: um Protocolo desenhado para a <span class="text-white font-medium underline decoration-pink-500/40 underline-offset-8">biologia feminina</span>.
+                </p>
+                <a href="#precos" class="internal-link inline-flex items-center justify-center px-12 py-7 rounded-3xl btn-attention animate-pulse-feminine text-white font-black text-xl shadow-2xl group uppercase tracking-widest font-heading">
+                    <span>Quero Meu Acesso Secreto</span>
+                    <svg class="w-6 h-6 ml-4 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+
+            <div class="relative reveal active delay-200">
+                <div class="status-card glass p-10 rounded-[40px] relative border-white/10 overflow-hidden">
+                    <div class="scan-line-horizontal" style="animation-delay: 0s;"></div>
+                    <div class="scan-line-horizontal" style="animation-delay: 2s;"></div>
+                    <div class="scan-line-vertical" style="animation-delay: 1s;"></div>
+                    
+                    <div class="aquarium-overlay">
+                        <div class="fish fish-1"></div>
+                        <div class="fish fish-2"></div>
+                        <div class="fish fish-3"></div>
+                    </div>
+
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-green-500/10 blur-3xl rounded-full"></div>
+                    
+                    <div class="space-y-10 relative z-10">
+                        <div class="flex justify-between items-center">
+                            <div class="flex flex-col">
+                                <span class="text-white font-black text-xl tracking-tight font-heading">Metabolic Status</span>
+                                <span class="text-slate-500 text-[10px] uppercase tracking-[0.2em] font-bold">Monitoramento em Tempo Real</span>
+                            </div>
+                            <div class="status-pill px-4 py-1.5 rounded-full flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_#22c55e]"></div>
+                                <span class="text-[10px] font-black text-green-400 uppercase tracking-widest">OTIMIZADO</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 gap-8">
+                            <div class="group">
+                                <div class="flex justify-between items-end mb-1">
+                                    <span class="text-slate-400 text-xs font-bold uppercase tracking-widest">Queima Ativa</span>
+                                    <span class="text-white text-3xl font-black font-heading"><span class="count-up" data-target="84">0</span>%</span>
+                                </div>
+                                <div class="progress-line-bg">
+                                    <div class="progress-line-fill" style="width: 84%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="group">
+                                <div class="flex justify-between items-end mb-1">
+                                    <span class="text-slate-400 text-xs font-bold uppercase tracking-widest">Nível de Energia</span>
+                                    <span class="text-white text-3xl font-black font-heading">+<span class="count-up" data-target="120">0</span>%</span>
+                                </div>
+                                <div class="progress-line-bg">
+                                    <div class="progress-line-fill" style="width: 100%; background: linear-gradient(to right, #22c55e, #4ade80);"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-6 border-t border-white/5 flex items-center gap-3">
+                            <svg class="w-5 h-5 text-pink-500 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            <span class="text-slate-500 text-[10px] font-medium leading-tight">Protocolo validado para biosistema feminino. <br>Resultados sincronizados.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Identification & Empathy -->
+    <section class="py-24 px-4 relative overflow-hidden bg-[#010409] border-t border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-24 reveal">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-pink-400 text-[10px] font-bold uppercase tracking-widest mb-8">Empatia & Reconhecimento</div>
+                <h2 class="text-4xl md:text-6xl font-black mb-8 font-heading uppercase tracking-tighter text-white">Você não está sozinha.</h2>
+                <p class="text-slate-400 max-w-3xl mx-auto text-lg md:text-xl leading-relaxed font-light">
+                    Se isso parece com você, <span class="text-slate-100 font-semibold italic">não é falta de força de vontade.</span> O corpo feminino reage ao estresse e à rotina de forma única. Você só precisa de uma abordagem que te entenda.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+                <!-- Card 1: Inchaço -->
+                <div class="reveal">
+                    <div class="glass p-10 rounded-[40px] h-full flex flex-col hover:bg-white/[0.04] transition-all duration-500 border-white/5 group cursor-default">
+                        <div class="pain-point-icon-3d">
+                            <div class="icon-swelling-3d">
+                                <div class="liquid-neon"></div>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 font-heading text-white group-hover:text-pink-400 transition-colors">Inchaço no fim do dia</h4>
+                        <p class="text-slate-400 leading-relaxed text-sm mb-8">Aquela sensação de peso nas pernas e abdômen que parece não ter motivo aparente.</p>
+                        <div class="mt-auto inline-flex items-center gap-2">
+                            <span class="w-1 h-1 rounded-full bg-pink-500"></span>
+                            <span class="text-pink-500 text-[10px] font-black uppercase tracking-[0.2em]">Entendemos você</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Roupa Aperta -->
+                <div class="reveal" style="transition-delay: 100ms;">
+                    <div class="glass p-10 rounded-[40px] h-full flex flex-col hover:bg-white/[0.04] transition-all duration-500 border-white/5 group cursor-default">
+                        <div class="pain-point-icon-3d">
+                            <div class="icon-clothes-3d">
+                                <div class="scissor-part scissor-1"></div>
+                                <div class="scissor-part scissor-2"></div>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 font-heading text-white group-hover:text-pink-400 transition-colors">A roupa aperta do nada</h4>
+                        <p class="text-slate-400 leading-relaxed text-sm mb-8">Peças que serviam perfeitamente pela manhã tornam-se desconfortáveis à tarde.</p>
+                        <div class="mt-auto inline-flex items-center gap-2">
+                            <span class="w-1 h-1 rounded-full bg-pink-500"></span>
+                            <span class="text-pink-500 text-[10px] font-black uppercase tracking-[0.2em]">Entendemos você</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Postura -->
+                <div class="reveal" style="transition-delay: 200ms;">
+                    <div class="glass p-10 rounded-[40px] h-full flex flex-col hover:bg-white/[0.04] transition-all duration-500 border-white/5 group cursor-default">
+                        <div class="pain-point-icon-3d">
+                            <div class="icon-back-3d"><span>!</span></div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 font-heading text-white group-hover:text-pink-400 transition-colors">Dor nas costas e má postura</h4>
+                        <p class="text-slate-400 leading-relaxed text-sm mb-8">O cansaço acumulado que reflete em ombros caídos e desconforto cervical constante.</p>
+                        <div class="mt-auto inline-flex items-center gap-2">
+                            <span class="w-1 h-1 rounded-full bg-pink-500"></span>
+                            <span class="text-pink-500 text-[10px] font-black uppercase tracking-[0.2em]">Entendemos você</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Fotos -->
+                <div class="reveal" style="transition-delay: 300ms;">
+                    <div class="glass p-10 rounded-[40px] h-full flex flex-col hover:bg-white/[0.04] transition-all duration-500 border-white/5 group cursor-default">
+                        <div class="pain-point-icon-3d">
+                            <div class="icon-camera-3d">
+                                <div class="lens-glass"></div>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 font-heading text-white group-hover:text-pink-400 transition-colors">Você evita fotos</h4>
+                        <p class="text-slate-400 leading-relaxed text-sm mb-8">Perdeu a confiança de registrar momentos com a família e amigos porque não se sente bem consigo mesma.</p>
+                        <div class="mt-auto inline-flex items-center gap-2">
+                            <span class="w-1 h-1 rounded-full bg-pink-500"></span>
+                            <span class="text-pink-500 text-[10px] font-black uppercase tracking-[0.2em]">Entendemos você</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Ciclo -->
+                <div class="reveal" style="transition-delay: 400ms;">
+                    <div class="glass p-10 rounded-[40px] h-full flex flex-col hover:bg-white/[0.04] transition-all duration-500 border-white/5 group cursor-default">
+                        <div class="pain-point-icon-3d">
+                            <div class="icon-loop-3d">
+                                <div class="orbit-ball"></div>
+                                <div class="core-user">
+                                    <svg class="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4 font-heading text-white group-hover:text-pink-400 transition-colors">Começa e para sempre</h4>
+                        <p class="text-slate-400 leading-relaxed text-sm mb-8">É difícil demais ser consistente quando o exercício parece uma punição em vez de um cuidado.</p>
+                        <div class="mt-auto inline-flex items-center gap-2">
+                            <span class="w-1 h-1 rounded-full bg-pink-500"></span>
+                            <span class="text-pink-500 text-[10px] font-black uppercase tracking-[0.2em]">Entendemos você</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center reveal">
+                <div class="text-white text-4xl mb-6 flex justify-center">
+                    <svg class="w-10 h-10 drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+                <p class="text-2xl md:text-4xl font-heading text-white font-light italic leading-tight max-w-4xl mx-auto">
+                    "Você merece uma rotina que te cure, não que te canse."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="precos" class="py-24 px-4 relative overflow-hidden bg-slate-950">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 font-heading uppercase tracking-tighter text-white">Escolha sua nova vida.</h2>
+                <p class="text-slate-400 font-medium italic">O investimento é simbólico, o resultado é extraordinário.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-stretch mb-20">
+                <div class="glass p-12 rounded-[48px] reveal border-white/5 flex flex-col shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-8 uppercase font-heading text-white">O Essencial</h3>
+                    <div class="text-6xl font-black text-pink-500 mb-10 font-heading">R$ 5,90</div>
+                    <ul class="space-y-4 mb-12 text-sm text-slate-300 flex-grow">
+                        <li class="flex items-center gap-3"><svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>Calendário de 21 dias</li>
+                        <li class="flex items-center gap-3"><svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>Guia rápido de postura</li>
+                    </ul>
+                    <a href="https://pay.kirvano.com/6ab45806-a4b3-4db7-b5b5-7379cd496f13" target="_blank" rel="noopener noreferrer" class="cta-purchase glass-btn block w-full text-center py-6 rounded-3xl transition-all font-black text-sm">QUERO COMEÇAR AGORA</a>
+                </div>
+
+                <div id="premium-card" class="glass p-14 rounded-[48px] reveal relative overflow-hidden border-pink-500/20 shadow-[0_0_60px_rgba(219,39,119,0.15)] flex flex-col items-center text-center">
+                    <div class="rotating-badge-container">
+                        <div class="rotating-badge-3d">
+                            <div class="badge-face">MAIS VENDIDO</div>
+                            <div class="badge-face badge-back">MELHOR ESCOLHA</div>
+                        </div>
+                    </div>
+                    <div class="best-seller-marquee"><div class="marquee-content">MAIS VENDIDO • MAIS VENDIDO • MAIS VENDIDO • MAIS VENDIDO •</div></div>
+                    <div class="mt-8 mb-10 h-[100px] flex items-center justify-center"><div id="kirvano-k" class="kirvano-k-3d"><span>K</span></div></div>
+                    <h3 class="text-4xl font-black mb-2 text-white uppercase font-heading">Premium</h3>
+                    <p class="text-pink-300 text-xs mb-8 uppercase tracking-widest font-bold">Acesso Vitalício</p>
+                    <div class="flex flex-col mb-10">
+                        <div class="hot-offer text-base font-heading mb-1">
+                            <svg class="w-5 h-5 animate-intelligent-flame" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1.5C6.75 1.5 6 6 6 6s2.25-1.5 4.5 0c0 0-3 3-3 7.5S10.5 21 12 21s4.5-3 4.5-7.5-3-7.5-3-7.5c2.25-1.5 4.5 0 4.5 0s-.75-4.5-6-4.5z"/></svg>
+                            <span>R$ 97,00</span>
+                        </div>
+                        <div class="text-7xl font-black text-white font-heading">R$ 9,90</div>
+                    </div>
+                    <ul class="space-y-4 mb-12 text-sm text-slate-300 flex-grow text-left w-full px-2">
+                        <li class="flex items-center gap-3"><svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>Tudo do Essencial</li>
+                        <li class="flex items-center gap-3"><svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>Bônus: Alongamento na parede</li>
+                        <li class="flex items-center gap-3"><svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>Guia anti-inchaço simples</li>
+                        <li class="flex items-center gap-3"><svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>Acompanhamento de progresso</li>
+                        <li class="flex items-center gap-3"><svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>Acesso vitalício</li>
+                        <li class="flex items-center gap-3"><svg class="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>Acesso ao grupo de suporte</li>
+                    </ul>
+                    <a href="https://pay.kirvano.com/fa1e93fe-5b74-4d10-be32-fe83969b6381" target="_blank" rel="noopener noreferrer" class="cta-purchase w-full py-7 rounded-3xl btn-attention text-white font-black text-2xl shadow-2xl group uppercase font-heading tracking-widest animate-pulse-feminine text-center">QUERO MEU ACESSO</a>
+                </div>
+            </div>
+
+            <!-- WHATSAPP E PRIVACIDADE -->
+            <div class="flex flex-col items-center gap-8 mt-20 mb-16 reveal">
+                <p class="text-slate-400 text-sm font-medium italic">Ficou com alguma dúvida?</p>
+                <a href="https://wa.me/5599981180711?text=Olá!%20Estou%20no%20site%20e%20gostaria%20de%20tirar%20algumas%20dúvidas%20sobre%20O%20Método." target="_blank" rel="noopener noreferrer" class="btn-whatsapp flex items-center gap-4 px-10 py-5 rounded-full group">
+                    <div class="w-8 h-8 flex items-center justify-center bg-white/20 rounded-full wp-icon-3d">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </div>
+                    <span class="text-white font-bold tracking-tight">Falar com Suporte no WhatsApp</span>
+                </a>
+
+                <div class="flex flex-wrap justify-center gap-10 pt-10 border-t border-white/5 w-full">
+                    <a href="#" class="text-[10px] text-slate-500 hover:text-pink-400 transition-colors uppercase tracking-[0.2em] font-black flex items-center gap-2">
+                        <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Termos de Uso
+                    </a>
+                    <a href="#" class="text-[10px] text-slate-500 hover:text-pink-400 transition-colors uppercase tracking-[0.2em] font-black flex items-center gap-2">
+                        <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Políticas de Privacidade
+                    </a>
+                    <a href="#" class="text-[10px] text-slate-500 hover:text-pink-400 transition-colors uppercase tracking-[0.2em] font-black flex items-center gap-2">
+                        <svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Segurança Blindada
+                    </a>
+                </div>
+            </div>
+
+            <!-- Trust Elements -->
+            <div class="reveal mt-32">
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center items-start">
+                    <div class="flex flex-col items-center">
+                        <div class="trust-icon-wrapper">
+                            <div class="icon-3d-object shield-3d">
+                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
+                            </div>
+                        </div>
+                        <h4 class="text-white font-black text-xl mb-1 uppercase font-heading tracking-tight">Garantia 7 dias</h4>
+                        <p class="text-slate-400 text-sm font-medium">Satisfação ou reembolso</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="trust-icon-wrapper">
+                            <div class="icon-3d-object flex items-center justify-center">
+                                <div class="lock-body-3d flex items-center justify-center">
+                                    <div class="lock-shackle-3d"></div>
+                                    <div class="w-1.5 h-1.5 rounded-full bg-white/40"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="text-white font-black text-xl mb-1 uppercase font-heading tracking-tight">Checkout Seguro</h4>
+                        <p class="text-slate-400 text-sm font-medium">Ambiente 100% criptografado</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="trust-icon-wrapper">
+                            <div class="icon-3d-object flex items-center justify-center">
+                                <div class="card-privacy-3d flex flex-col gap-1">
+                                    <div class="h-1 w-6 bg-white/20 rounded"></div>
+                                    <div class="h-1 w-10 bg-white/20 rounded"></div>
+                                    <div class="h-2 w-2 rounded-full bg-white/30 self-end mt-auto"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="text-white font-black text-xl mb-1 uppercase font-heading tracking-tight">Privacidade 100%</h4>
+                        <p class="text-slate-400 text-sm font-medium">Dados protegidos LGPD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const revealObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            if(entry.target.querySelector('.count-up')) {
+                animateNumbers(entry.target);
+            }
+        } }); }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        function animateNumbers(container) {
+            const counters = container.querySelectorAll('.count-up');
+            counters.forEach(counter => {
+                if(counter.getAttribute('data-animated')) return;
+                counter.setAttribute('data-animated', 'true');
+                const target = +counter.getAttribute('data-target');
+                let count = 0;
+                const duration = 2000;
+                const startTime = performance.now();
+
+                function update(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easeOutQuad = (t) => t * (2 - t);
+                    const currentCount = Math.floor(easeOutQuad(progress) * target);
+                    counter.innerText = currentCount;
+                    if (progress < 1) requestAnimationFrame(update);
+                    else counter.innerText = target;
+                }
+                requestAnimationFrame(update);
+            });
+        }
+
+        function updateBuyersCounter() {
+            const counter = document.getElementById('buyers-counter');
+            if (counter) {
+                let currentStr = counter.innerText.replace(/\./g, '');
+                let startCount = parseInt(currentStr);
+                const rand = Math.random();
+                let increment = rand > 0.4 ? (rand > 0.85 ? 2 : 1) : 0;
+                if (increment === 0) return;
+                const target = startCount + increment;
+                const duration = 1200;
+                const startTime = performance.now();
+                function step(timestamp) {
+                    const elapsed = timestamp - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+                    const val = Math.floor(startCount + (target - startCount) * easeOutCubic(progress));
+                    counter.innerText = val.toLocaleString('pt-BR');
+                    if (progress < 1) requestAnimationFrame(step);
+                }
+                requestAnimationFrame(step);
+            }
+        }
+        setInterval(updateBuyersCounter, 3000);
+
+        const statusCard = document.querySelector('.status-card');
+        if(statusCard) {
+            statusCard.addEventListener('mousemove', (e) => {
+                const rect = statusCard.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                statusCard.style.transform = `perspective(1000px) rotateX(${-y * 10}deg) rotateY(${x * 10}deg) scale(1.02)`;
+            });
+            statusCard.addEventListener('mouseleave', () => {
+                statusCard.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)`;
+            });
+        }
+
+        const logoContainer = document.getElementById('logo-container');
+        const logo3dIcon = document.getElementById('logo-3d-icon');
+        if (logoContainer && logo3dIcon) {
+            logoContainer.addEventListener('mousemove', (e) => {
+                const rect = logoContainer.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const rotateX = (rect.height / 2 - y) / 2;
+                const rotateY = (x - rect.width / 2) / 2;
+                logo3dIcon.style.transform = `perspective(400px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.3)`;
+            });
+            logoContainer.addEventListener('mouseleave', () => {
+                logo3dIcon.style.transform = `perspective(400px) rotateX(0deg) rotateY(0deg) scale(1)`;
+            });
+        }
+
+        const kirvanoK = document.getElementById('kirvano-k');
+        if (kirvanoK) {
+            kirvanoK.addEventListener('click', () => {
+                kirvanoK.classList.toggle('expanded');
+                const span = kirvanoK.querySelector('span');
+                span.innerText = kirvanoK.classList.contains('expanded') ? 'KIRVANO' : 'K';
+                span.style.fontSize = kirvanoK.classList.contains('expanded') ? '22px' : '48px';
+            });
+        }
+
+        const socialProofPill = document.querySelector('.social-proof-pill');
+        if (socialProofPill) {
+            socialProofPill.addEventListener('mousemove', (e) => {
+                const rect = socialProofPill.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                const icon = socialProofPill.querySelector('.icon-verified-3d');
+                if (icon) {
+                    icon.style.transform = `perspective(50px) rotateX(${y * 15}deg) rotateY(${-x * 15}deg) scale(1.2)`;
+                }
+            });
+            socialProofPill.addEventListener('mouseleave', () => {
+                const icon = socialProofPill.querySelector('.icon-verified-3d');
+                if (icon) icon.style.transform = '';
+            });
+        }
+
+        /* Interatividade inteligente nos ícones de confiança */
+        const trustWrappers = document.querySelectorAll('.trust-icon-wrapper');
+        trustWrappers.forEach(wrapper => {
+            const icon = wrapper.querySelector('.icon-3d-object');
+            const shackle = wrapper.querySelector('.lock-shackle-3d');
+            
+            const handleMove = (clientX, clientY) => {
+                const rect = wrapper.getBoundingClientRect();
+                const x = (clientX - rect.left) / rect.width - 0.5;
+                const y = (clientY - rect.top) / rect.height - 0.5;
+                
+                icon.style.animation = 'none';
+                icon.style.transform = `perspective(1000px) rotateX(${-y * 45}deg) rotateY(${x * 45}deg) scale(1.3) translateZ(20px)`;
+                
+                // Se for o cadeado, abre a alça
+                if (shackle) shackle.classList.add('is-open');
+            };
+
+            const handleReset = () => {
+                icon.style.animation = 'rotate-float 5s ease-in-out infinite';
+                icon.style.transform = '';
+                
+                // Se for o cadeado, fecha a alça
+                if (shackle) shackle.classList.remove('is-open');
+            };
+
+            wrapper.addEventListener('mousemove', (e) => handleMove(e.clientX, e.clientY));
+            wrapper.addEventListener('mouseleave', handleReset);
+            
+            wrapper.addEventListener('touchstart', (e) => {
+                const touch = e.touches[0];
+                handleMove(touch.clientX, touch.clientY);
+            }, { passive: true });
+            
+            wrapper.addEventListener('touchmove', (e) => {
+                const touch = e.touches[0];
+                handleMove(touch.clientX, touch.clientY);
+            }, { passive: true });
+
+            wrapper.addEventListener('touchend', handleReset);
+            
+            // Suporte para clique/toque persistente
+            wrapper.addEventListener('click', () => {
+                if (shackle) {
+                    shackle.classList.toggle('is-open');
+                }
+            });
+        });
+
+        /* NOVO: Manipulador de links internos para evitar erros de conexão em sandboxes */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        /* EFEITO DE PROCESSAMENTO FAKE NOS BOTÕES DE COMPRA E CORREÇÃO DE ERRO DE CONEXÃO */
+        document.querySelectorAll('.cta-purchase').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetUrl = this.href;
+                
+                // Desativa interação e mostra estado de carregamento
+                this.style.pointerEvents = 'none';
+                this.style.opacity = '0.9';
+                const originalHTML = this.innerHTML;
+                this.innerHTML = `
+                    <div class="flex items-center justify-center gap-3">
+                        <svg class="animate-spin h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        <span class="tracking-widest">PROCESSANDO...</span>
+                    </div>
+                `;
+
+                // Pequeno delay para efeito psicológico de processamento (200ms)
+                setTimeout(() => {
+                    // CORREÇÃO: Usar window.open ou window.top.location.href para evitar "refused to connect" 
+                    // Isso acontece porque checkouts geralmente não permitem ser abertos dentro de iframes (como o sandbox).
+                    window.open(targetUrl, '_blank');
+                    
+                    // Restaura o botão caso o usuário retorne à página
+                    setTimeout(() => {
+                        this.style.pointerEvents = 'auto';
+                        this.style.opacity = '1';
+                        this.innerHTML = originalHTML;
+                    }, 1000);
+                }, 200);
+            });
+        });
+
+        /* NOVO: Movimento magnético inteligente para os ícones de Pontos de Dor */
+        const painPointCards = document.querySelectorAll('section:nth-of-type(2) .glass');
+        painPointCards.forEach(card => {
+            const iconContainer = card.querySelector('.pain-point-icon-3d');
+            if (!iconContainer) return;
+
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                
+                // Movimento magnético 3D ultra suave
+                iconContainer.style.transform = `
+                    scale(1.3) 
+                    perspective(1000px) 
+                    rotateX(${-y * 30}deg) 
+                    rotateY(${x * 30}deg) 
+                    translateX(${x * 20}px) 
+                    translateY(${y * 20}px)
+                    translateZ(30px)
+                `;
+                iconContainer.style.filter = `drop-shadow(${x * -20}px ${y * -20}px 15px rgba(219, 39, 119, 0.3))`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                iconContainer.style.transform = '';
+                iconContainer.style.filter = '';
+            });
+        });
+
+        window.onscroll = () => { 
+            const nav = document.getElementById('main-nav-container');
+            if (window.scrollY > 40) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop; 
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight; 
+            document.getElementById("scroll-progress").style.width = (winScroll / height) * 100 + "%"; 
+        };
+    </script>
+</body>
+</html>
